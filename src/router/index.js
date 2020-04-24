@@ -25,6 +25,17 @@ export default new Router({
       path: '/swiper2',
       name: 'swiper2',
       component: (resolve) => {require(['@/view/swiper2'], resolve)}
+    },
+    {
+      path: '/swiper3',
+      name: 'swiper3',
+      component: (resolve) => {require(['@/view/swiper3'], resolve)}
+    },
+    {
+      path: '/treetable',
+      name: 'treetable',
+      component: (resolve) => {require(['@/view/treetable'], resolve)}
     }
+
   ]
 })

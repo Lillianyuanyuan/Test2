@@ -1,0 +1,78 @@
+/*左右伸拉*/
+.transferComponent .el-transfer{
+  display:block !important;height: 100% !important;
+}
+.transferComponent .el-transfer-panel__header{
+  background: #0F3B5C;color:#fff;
+  box-shadow: 2px 4px 10px #1096BB inset;
+  border-bottom: 1px solid #1096BB;
+}
+.transferComponent .el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label{
+  color:#fff;
+}
+.transferComponent .el-transfer-panel{
+  float:left;display:block;width:40%;height:100%;
+  background: #0F3B5C;color:#fff;border:none;
+  box-shadow: 2px 4px 4px #1096BB inset;
+}
+.transferComponent .el-transfer-panel__item.el-checkbox .el-checkbox__label{
+  color:#fff;
+}
+.transferComponent .el-transfer__buttons{
+  float:left;position:relative;display:block;width:20%;height:100%;padding:0;
+  background: #0F3B5C;
+  box-shadow: 2px 4px 4px #1096BB inset;
+}
+.transferComponent .el-transfer__buttons::after{
+  clear:both;
+}
+.transferComponent .el-transfer__button{
+    position:absolute;top:40%;
+    width:35%;padding:0;
+    background: #0F3B5C;
+    box-shadow: 2px 4px 4px #1096BB inset;
+}
+.transferComponent .el-transfer__button:nth-child(1){
+  left:5%;
+}
+.transferComponent .el-transfer__button:nth-child(2){
+  right:5%;
+}
+
+
+
+/*transerTree*/
+
+.transferTree .ztree li a{
+  color:#fff;
+}
+
+/*defineTransfer*/
+.aContent .anniuStyle .el-checkbox{
+  display:block;color:#fff;
+}
+.checkList .checkP{height:30px;line-height:30px;}
+.checkList .el-checkbox .el-checkbox__label{
+  display:none;
+}
+.checkList .el-check-span{
+  font-size: 14px;
+  padding-left: 12px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.checkList .labelColor{
+  color:#409EFF;
+}
+
+
+
+
+
+
+
+
+

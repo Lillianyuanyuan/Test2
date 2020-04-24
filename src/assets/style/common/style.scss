@@ -1,0 +1,220 @@
+$mainColor: #4AB6DC;
+$mainBgColor: #f8f8f8;
+$mainFontColor: #444;
+$borderColor: #dddddd;
+$lightColor: #ffffff;
+$blueBgColor:#4AB6DC;
+$fontWhiteColor:#FFFFFF;
+
+p{
+   padding: 10px 0px 10px 10px;
+}
+
+* { 
+  letter-spacing:1px;
+}
+html{
+ font-size: 62.5%;
+}
+body{ 
+  font-size: 14px; 
+  font-size: 1.4rem; 
+  font-family: 'Microsoft Yahei'; 
+  background-color: $mainBgColor;
+  margin: 0px;
+}
+a, a:link, a:active{
+	display: block;
+	text-decoration: none;
+	color: $mainFontColor;
+  padding-left:8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexRow($align: 'center') {
+	display: flex; flex-direction: row; align-items: center; justify-content: $align;
+}
+
+
+@mixin flexColumn($align: 'center') {
+	display: flex; flex-direction: column; align-items: center; justify-content: $align;
+}
+
+.flexRowStart{
+	@include flexRow('flex-start');
+}
+.flexRowCenter{
+	@include flexRow();
+}
+.flexRowEnd{
+	@include flexRow('flex-end');
+}
+.flexRowBetween{
+	@include flexRow('space-between');
+}
+.flexColumnStart{
+	@include flexColumn('flex-start');
+}
+.flexColumnCenter{
+	@include flexColumn();
+}
+.flexColumnEnd{
+	@include flexColumn('flex-end');
+}
+.flexColumnBetween{
+	@include flexColumn('space-between');
+}
+
+.center{text-align: center;}
+
+.flexItem{
+	display: block;
+	flex: 1;
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  header{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: left;
+    background-color: $blueBgColor;
+    h1{
+      margin: 0;
+      padding: 0;
+      height: 4rem;
+      line-height: 4rem;
+      text-align: left;
+      background-color: $blueBgColor;
+      color: $fontWhiteColor;
+      font-size: 2.0rem;
+      font-weight: 700;
+    }
+    img{
+      margin: 0;
+      padding: 0;
+
+    }
+    span.title{
+      margin: 0;
+      padding: 0;
+      height: 4rem;
+      line-height: 4rem;
+      text-align: left;
+      background-color: $blueBgColor;
+      color: $fontWhiteColor;
+      font-size: 2.0rem;
+      font-weight: 700;
+    }
+    nav{
+      a{
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        border-bottom: 2px solid #dddddd;
+        padding: 0 1rem;
+        background-color: #ffffff;
+        box-sizing: border-box;
+      }
+      a:not(:last-child){
+        border-right: 1px solid #dddddd;
+      }
+    }
+  }
+  .mainContent{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+/*--add by zhangyy-------*/
+.mybtn {
+  display: inline-block;
+  padding: 2px 25px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.mybtn {
+  font-weight: 300;
+  margin: 0 10px 10px 0;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s; }
+  .mybtn.active {
+    box-shadow: none; }
+  .mybtn .caret {
+    margin: -2px 0 0 6px; }
+  .mybtn [class^="icon-"], .mybtn[class*="icon-"] {
+    display: inline-block;
+    margin-right: 10px; }
+
+
+.mybtn-mini, .mybtn-small ,.mybtn-xs{
+  padding: 2px 17px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+.mybtn-blue {
+  color: #fff;
+  background-color: #5AD2F6;
+  border-color: #5AD2F6;
+}
+.mybtn-blue:hover, .mybtn-blue.active {
+  background: transparent;
+  color: #5AD2F6;
+  border-color: #5AD2F6; }
+
+.mybtn-blue:hover .caret, .mybtn-blue.active .caret {
+    border-top-color: #5AD2F6; 
+}
+.mybtn-blue-outline {
+  background: transparent; }
+.mybtn-blue-outline {
+  color: #1AB3E1;
+  border: 1px solid #1AB3E1; }
+.mybtn-blue-outline .caret {
+    border-top-color: #1AB3E1; }
+.mybtn-blue-outline:hover, .mybtn-blue-outline.active {
+    background: #1AB3E1;
+    color: white; }
+.mybtn-blue-outline:hover .caret, .mybtn-blue-outline.active .caret {
+      border-top-color: white; }
+.mybtn-group.dropup .mybtn-blue:hover .caret, .mybtn-group.dropup .mybtn-blue-outline .caret {
+    border-bottom-color: #1AB3E1; }

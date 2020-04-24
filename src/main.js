@@ -17,6 +17,13 @@ import 'element-ui/lib/theme-chalk/index.css';
 import ElementUI from 'element-ui'
 Vue.use(ElementUI);
 
+import common from './appConfig/common.js'
+Vue.prototype.common = common;
+import http from './appConfig/axios.js'
+
+import Treetable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table', Treetable);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

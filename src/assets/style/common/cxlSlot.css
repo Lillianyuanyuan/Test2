@@ -1,0 +1,133 @@
+.cxlAddSlot .el-form-item__content{
+  display:flex;
+}
+.cxlAddSlot .el-input__inner{
+  height:36px;line-height:36px;
+  color:#fff;
+}
+.cxlAddSlot .el-select{
+  width:100%;
+}
+.cxlAddSlot .el-button{
+   margin:30px auto;
+   padding:10px 0;
+   width:40%;
+   line-height:normal;
+   height:auto;
+}
+
+
+
+/*设备管理*/
+.selectForm .el-form-item{
+  display:inline-block;
+  margin:0;
+}
+.commonButton,.commonButton:focus{
+  background: #0F3B5C;
+  box-shadow: 2px 4px 10px #1096BB inset;
+  height: 30px;
+  line-height: 30px;
+  min-width: 80px;
+  border-color: #409EFF;
+  color:#fff;
+}
+.commonButton:hover{
+  box-shadow: 0 0 6px #f2f2f2 inset;
+  background: #00afcf;color:#fff;
+}
+
+/*系统管理*/
+.cxlSystemConfig .el-form-item{
+  margin-bottom:14px;
+}
+.cxlSystemConfig .el-form-item__content{
+  display:flex;
+}
+.cxlSystemConfig .el-select{
+  width:100%;
+}
+.cxlSystemConfig .commonButton{
+ width:200px;margin:30px auto;height:34px;line-height:34px;
+}
+.cxlSystemConfig .el-input.is-disabled .el-input__inner {
+  /*background-color: #445671;*/
+  background-color: #56697b;
+}
+
+
+/*部署管理*/
+.dispose .top{
+  border:1px solid #039EC0;padding:10px;margin-bottom:20px;
+}
+.disposeTable .el-input.is-disabled .el-input__inner{
+  background-color: transparent;
+  color: #fff;
+}
+.disposeTable .el-input.is-disabled .el-input__inner:hover{
+  background-color: transparent;
+  color: #fff;
+}
+.disposeTable .el-table td{
+  padding:0;
+}
+.disposeTable .el-select .el-input__inner{
+  border:1px solid #039EC0;
+}
+.disposeTable .el-input__inner{
+  border:none;
+}
+.disposeTable .el-form-item{
+  margin-bottom:0;
+}
+.disposeTable .el-form-item__error{
+  color: #F56C6C;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 4px;
+  position: absolute;
+  left: 100%;
+  top: 14px;
+  width: 100px;
+}
+
+
+.el-input.is-disabled .el-input__inner{
+  background-color: #56697b;
+  color: #fff;
+}
+
+/*板卡线路lineConfig.vue*/
+.sendGain .el-input-number{
+  width: 140px;
+}
+.sendGain .el-input-number span {
+  background: #0E3B5C;
+  -webkit-box-shadow: 1px 1px 10px #00D8FF inset;
+  box-shadow: 1px 1px 10px #00D8FF inset;
+  font-size: 14px;
+  color:#fff;
+  border:none;
+  height: 36px;
+  line-height: 36px;
+}
+
+
+.userAuthority .el-form-item__label{
+  line-height:50px;
+}
+
+.userAuthority .el-form-item{
+  float:left;
+}
+
+/*设备状态*/
+.bottom .cardStatus .el-form-item__content{
+  display:block;line-height:normal;
+}
+.bottom .el-form-item{
+  margin-bottom:10px;
+}
+.bottom .el-input{
+  width:200px;
+}
